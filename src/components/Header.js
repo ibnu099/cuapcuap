@@ -3,15 +3,13 @@ import {Nav,
         Navbar, 
         NavDropdown, 
         Form, 
-        FormControl, 
-        InputGroup,
+        FormControl,
         Container} from 'react-bootstrap';
 
 export default function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="primary" variant="dark" expand="lg">
       <Container>
-        {/* <Navbar.Brand href="#home">CuapCuap</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -20,14 +18,8 @@ export default function Header() {
               <Nav.Link href="#notifications">Notifications</Nav.Link>
               <Nav.Link href="#messages">Messages</Nav.Link>
             </Nav>
-            <Form inline>
-              <InputGroup>
-                <InputGroup.Prepend>
-                  <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                </InputGroup.Prepend>
-                <FormControl type="text" placeholder="Search Twitter" className="mr-sm-2" />              
-              </InputGroup>
-              {/* <Button variant="outline-success">Search</Button> */}
+            <Form inline>            
+              <FormControl type="text" placeholder="Search Twitter" className="mr-sm-2" />              
             </Form>
             <Nav>
               <NavDropdown title="Ibnu Gunawan" id="basic-nav-dropdown">
